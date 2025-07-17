@@ -61,7 +61,8 @@ const AbstractBackground: React.FC = () => {
     p5.clear();
     p5.background(15);
 
-    const angle = p5.frameCount * 0.01;
+    const angleSpeed = 0.0005; // Adjust speed as desired
+    const angle = p5.frameCount * angleSpeed;
 
     p5.push();
     p5.rotateY(angle);

@@ -2,11 +2,15 @@
   "name": "spatial-automata-website",
   "version": "0.1.0",
   "private": true,
+  "resolutions": {
+  "@types/p5": "1.7.6"
+},
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "preinstall": "npx npm-force-resolutions"
   },
   "dependencies": {
     "next": "15.3.5",
