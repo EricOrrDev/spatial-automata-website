@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Navbar() {
   return (
     <nav className="px-6 py-6 flex justify-between items-center bg-industrial-black/50 rounded-xl shadow-lg text-center backdrop-blur-sm">
@@ -16,7 +17,7 @@ export default function Navbar() {
           About
         </a>
       </div>
-      <a href="/">
+      <Link href="/">
         <Image
           src="/Full_Logo_White.svg"
           alt="Spatial Automata Logo"
@@ -25,7 +26,7 @@ export default function Navbar() {
           className="h-8 inline-block mr-2"
           priority
         />
-      </a>
+      </Link>
     </nav>
   );
 }
