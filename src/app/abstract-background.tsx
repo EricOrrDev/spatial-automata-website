@@ -1,6 +1,7 @@
 "use client";
 import dynamic from "next/dynamic";
 import React from "react";
+import type p5 from "p5";
 
 const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
   ssr: false,
@@ -29,34 +30,38 @@ const AbstractBackground: React.FC = () => {
   // Store shapes in a ref so they persist across frames
   const shapesRef = React.useRef<Shape[]>([]);
 
-  const setup = (p5: any, canvasParentRef: any) => {
-    p5.createCanvas(p5.windowWidth, p5.windowHeight, p5.WEBGL).parent(
-      canvasParentRef
-    );
+  const setup = (p5Instance: p5, canvasParentRef: Element) => {
+    p5Instance
+      .createCanvas(
+        p5Instance.windowWidth,
+        p5Instance.windowHeight,
+        p5Instance.WEBGL
+      )
+      .parent(canvasParentRef);
     // Generate random shapes once
     if (shapesRef.current.length === 0) {
       for (let i = 0; i < amountOfObjects.current; i++) {
-        const typeRand = p5.int(p5.random(3));
+        const typeRand = p5Instance.int(p5Instance.random(3));
         const type =
           typeRand === 0 ? "box" : typeRand === 1 ? "sphere" : "cylinder";
         shapesRef.current.push({
           type,
-          x: p5.random(-400, 400),
-          y: p5.random(-250, 250),
-          z: p5.random(-300, 300),
-          w: p5.random(60, 180),
-          h: p5.random(60, 180),
-          d: p5.random(60, 180),
+          x: p5Instance.random(-400, 400),
+          y: p5Instance.random(-250, 250),
+          z: p5Instance.random(-300, 300),
+          w: p5Instance.random(60, 180),
+          h: p5Instance.random(60, 180),
+          d: p5Instance.random(60, 180),
         });
       }
     }
   };
 
-  const draw = (p5: any) => {
+  const draw = (p5: p5) => {
     p5.clear();
     p5.background(15);
 
-    const angle = p5.frameCount * 0.001;
+    const angle = p5.frameCount * 0.01;
 
     p5.push();
     p5.rotateY(angle);
@@ -97,8 +102,8 @@ const AbstractBackground: React.FC = () => {
     p5.pop();
   };
 
-  const windowResized = (p5: any) => {
-    p5.resizeCanvas(p5.windowWidth, p5.windowHeight);
+  const windowResized = (p5Instance: p5) => {
+    p5Instance.resizeCanvas(p5Instance.windowWidth, p5Instance.windowHeight);
   };
 
   return (
