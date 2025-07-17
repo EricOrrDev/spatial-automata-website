@@ -16,14 +16,16 @@ export default function Navbar() {
           About
         </a>
       </div>
-      <Image
-        src="/Full_Logo_White.svg"
-        alt="Spatial Automata Logo"
-        width={120}
-        height={32}
-        className="h-8 inline-block mr-2"
-        priority
-      />
+      <a href="/">
+        <Image
+          src="/Full_Logo_White.svg"
+          alt="Spatial Automata Logo"
+          width={120}
+          height={32}
+          className="h-8 inline-block mr-2"
+          priority
+        />
+      </a>
     </nav>
   );
 }
