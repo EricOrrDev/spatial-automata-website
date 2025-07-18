@@ -1,8 +1,8 @@
 import AbstractBackground from "./abstract-background";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import HeroSection from "./components/hero";
-import ProductOffers from "./components/productOffers";
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+import HeroSection from "../components/hero";
+import ProductOffers from "../components/productOffers";
 
 export default function Home() {
   return (
