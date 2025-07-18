@@ -17,6 +17,17 @@ type Shape = {
   d: number;
 };
 
+type ConstructionLine = {
+  x1: number;
+  y1: number;
+  z1: number;
+  x2: number;
+  y2: number;
+  z2: number;
+  strokeWeight: number;
+  opacity: number;
+};
+
 const AbstractBackground: React.FC = () => {
   const amountOfObjectsLowerBound = 20;
   const amountOfObjectsUpperBound = 35;
@@ -30,6 +41,9 @@ const AbstractBackground: React.FC = () => {
   // Store shapes in a ref so they persist across frames
   const shapesRef = React.useRef<Shape[]>([]);
 
+  // Store construction lines in a ref so they persist across frames
+  const constructionLinesRef = React.useRef<ConstructionLine[]>([]);
+
   const setup = (p5Instance: p5, canvasParentRef: Element) => {
     p5Instance
       .createCanvas(
@@ -38,6 +52,7 @@ const AbstractBackground: React.FC = () => {
         p5Instance.WEBGL
       )
       .parent(canvasParentRef);
+
     // Generate random shapes once
     if (shapesRef.current.length === 0) {
       for (let i = 0; i < amountOfObjects.current; i++) {
@@ -55,31 +70,38 @@ const AbstractBackground: React.FC = () => {
         });
       }
     }
+
+    // Generate persistent construction lines once
+    if (constructionLinesRef.current.length === 0) {
+      for (let i = 0; i < 30; i++) {
+        constructionLinesRef.current.push({
+          x1: p5Instance.random(-600, 600),
+          y1: p5Instance.random(-400, 400),
+          z1: p5Instance.random(-400, 400),
+          x2: p5Instance.random(-600, 600),
+          y2: p5Instance.random(-400, 400),
+          z2: p5Instance.random(-400, 400),
+          strokeWeight: p5Instance.random(0.5, 2),
+          opacity: p5Instance.random(20, 60),
+        });
+      }
+    }
   };
 
   const draw = (p5: p5) => {
     p5.clear();
     p5.background(15);
-
     const angleSpeed = 0.0005; // Adjust speed as desired
     const angle = p5.frameCount * angleSpeed;
-
     p5.push();
     p5.rotateY(angle);
 
-    // Draw random construction lines in 3D space (these can stay random if you want the "sketch" effect)
-    for (let i = 0; i < 30; i++) {
+    // Draw persistent construction lines
+    for (const line of constructionLinesRef.current) {
       p5.push();
-      p5.stroke(255, 40);
-      p5.strokeWeight(p5.random(0.5, 2));
-      p5.line(
-        p5.random(-600, 600),
-        p5.random(-400, 400),
-        p5.random(-400, 400),
-        p5.random(-600, 600),
-        p5.random(-400, 400),
-        p5.random(-400, 400)
-      );
+      p5.stroke(255, line.opacity);
+      p5.strokeWeight(line.strokeWeight);
+      p5.line(line.x1, line.y1, line.z1, line.x2, line.y2, line.z2);
       p5.pop();
     }
 
@@ -99,7 +121,6 @@ const AbstractBackground: React.FC = () => {
       }
       p5.pop();
     }
-
     p5.pop();
   };
 
