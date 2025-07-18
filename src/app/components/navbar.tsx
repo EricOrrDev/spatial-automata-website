@@ -4,26 +4,26 @@ export default function Navbar() {
   return (
     <nav className="px-6 py-6 flex justify-between items-center bg-industrial-black/50 rounded-xl shadow-lg text-center backdrop-blur-sm">
       <div className="space-x-6">
-        <a
+        <Link
           href="/products"
           className="hover:text-blueprint-blue transition-colors"
         >
           Products
-        </a>
-        <a
+        </Link>
+        <Link
           href="/about"
           className="hover:text-blueprint-blue transition-colors"
         >
           About
-        </a>
+        </Link>
       </div>
       <Link href="/">
         <Image
           src="/Full_Logo_White.svg"
           alt="Spatial Automata Logo"
-          width={120}
-          height={32}
-          className="h-8 inline-block mr-2"
+          width={180}
+          height={40}
+          className=" inline-block mr-2"
           priority
         />
       </Link>
