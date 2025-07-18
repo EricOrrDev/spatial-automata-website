@@ -1,6 +1,6 @@
 export default function HeroSection() {
   return (
-    <div className="bg-industrial-black/50 rounded-4xl shadow-lg p-10 text-center backdrop-blur-sm">
+    <div className="bg-industrial-black/90 rounded-4xl shadow-lg p-10 text-center backdrop-blur-sm">
       <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
         Building the future of AEC automation.
         <br />

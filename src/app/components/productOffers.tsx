@@ -5,7 +5,7 @@ export default function ProductOffers() {
         Planned Products
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
-        <div className="bg-industrial-black/50 rounded-3xl shadow-lg p-10 text-left backdrop-blur-sm">
+        <div className="bg-industrial-black/90 rounded-3xl shadow-lg p-10 text-left backdrop-blur-sm">
           <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">
             Block Captain
           </h3>
@@ -21,7 +21,7 @@ export default function ProductOffers() {
             Learn more →
           </a>
         </div>
-        <div className="bg-industrial-black/50 rounded-3xl shadow-lg p-10 text-left backdrop-blur-sm">
+        <div className="bg-industrial-black/90 rounded-3xl shadow-lg p-10 text-left backdrop-blur-sm">
           <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">
             Redline Relay
           </h3>
@@ -37,7 +37,7 @@ export default function ProductOffers() {
             Learn more →
           </a>
         </div>
-        <div className="bg-industrial-black/50 rounded-3xl shadow-lg p-10 text-left backdrop-blur-sm">
+        <div className="bg-industrial-black/90 rounded-3xl shadow-lg p-10 text-left backdrop-blur-sm">
           <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">
             ExcellentDB
           </h3>
@@ -53,7 +53,7 @@ export default function ProductOffers() {
             Learn more →
           </a>
         </div>
-        <div className="bg-industrial-black/50 rounded-3xl shadow-lg p-10 text-left backdrop-blur-sm">
+        <div className="bg-industrial-black/90 rounded-3xl shadow-lg p-10 text-left backdrop-blur-sm">
           <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">
             CodeCheck
           </h3>

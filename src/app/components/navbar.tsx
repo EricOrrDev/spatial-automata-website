@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 export default function Navbar() {
   return (
-    <nav className="px-6 py-6 flex justify-between items-center bg-industrial-black/50 rounded-xl shadow-lg text-center backdrop-blur-sm">
+    <nav className="px-6 py-6 flex justify-between items-center bg-industrial-black/90 rounded-xl shadow-lg text-center backdrop-blur-sm">
       <div className="space-x-6">
         <Link
           href="/products"
