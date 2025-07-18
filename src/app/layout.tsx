@@ -26,9 +26,23 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="icon" href="/Galaxy-White.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-white.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-white.png" />
-        <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180-white.png" />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="32x32"
+          href="/favicon-32x32-white.png"
+        />
+        <link
+          rel="icon"
+          type="image/png"
+          sizes="16x16"
+          href="/favicon-16x16-white.png"
+        />
+        <link
+          rel="apple-touch-icon"
+          sizes="180x180"
+          href="/favicon-180x180-white.png"
+        />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
