@@ -1,29 +1,80 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "@/components/ui/navigation-menu";
+import { cn } from "@/lib/utils";
+
 export default function Navbar() {
   return (
-    <nav className="px-6 py-6 flex justify-between items-center bg-industrial-black/90 rounded-xl shadow-lg text-center backdrop-blur-sm">
-      <div className="space-x-6">
-        <Link
-          href="/products"
-          className="hover:text-blueprint-blue transition-colors"
-        >
-          Products
-        </Link>
-        <Link
-          href="/about"
-          className="hover:text-blueprint-blue transition-colors"
-        >
-          About
-        </Link>
-      </div>
+    <nav className="px-6 py-6 flex items-center justify-between bg-industrial-black/90 rounded-xl shadow-lg text-center backdrop-blur-sm">
+      {/* Left side with nav menu */}
+      <NavigationMenu>
+        <NavigationMenuList className="flex items-center space-x-6">
+          <NavigationMenuItem>
+            <NavigationMenuTrigger className="text-black">
+              Products
+            </NavigationMenuTrigger>
+            <NavigationMenuContent className="bg-industrial-black text-black rounded-md shadow-md p-4 min-w-[200px]">
+              <ul className="flex flex-col gap-2">
+                {[
+                  { name: "MText++", href: "/products/mtextplusplus" },
+                  { name: "Block Captain", href: "/products/block-captain" },
+                  { name: "Redline Relay", href: "/products/redline-relay" },
+                  { name: "ExcellentDB", href: "/products/excellentdb" },
+                  { name: "CodeCheck", href: "/products/codecheck" },
+                ].map((item) => (
+                  <li key={item.name}>
+                    <NavigationMenuLink asChild>
+                      <Link
+                        href={item.href}
+                        className={cn(
+                          "block px-3 py-2 rounded-md hover:bg-blueprint-blue/20 transition-colors"
+                        )}
+                      >
+                        {item.name}
+                      </Link>
+                    </NavigationMenuLink>
+                  </li>
+                ))}
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild>
+              <Link
+                href="/about"
+                className="hover:text-blueprint-blue text-white transition-colors"
+              >
+                About
+              </Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+
+        {/* ShadCN Required */}
+        <NavigationMenuIndicator />
+        <NavigationMenuViewport />
+      </NavigationMenu>
+
+      {/* Right-aligned logo */}
       <Link href="/">
         <Image
           src="/Full_Logo_White.svg"
           alt="Spatial Automata Logo"
           width={180}
           height={40}
-          className=" inline-block mr-2"
+          className="inline-block"
           priority
         />
       </Link>
