@@ -8,6 +8,16 @@ export default function ProductOffers() {
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
         <div className="p-10 text-left text-white">
+          <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">MText++</h3>
+          <p className="text-white mb-2">
+            Increment numbers in MText with a single command. Quickly update lot
+            or sheet numbers in AutoCAD with adjustable step values.
+          </p>
+          <a href="/products/mtextplusplus" className="text-white hover:underline">
+            Learn more →
+          </a>
+        </div>
+        <div className="p-10 text-left text-white">
           <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">
             Block Captain
           </h3>
