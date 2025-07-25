@@ -1,4 +1,4 @@
-import AbstractBackground from "./abstract-background";
+import AbstractBackground from "@/components/abstract-background";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import HeroSection from "../components/hero";
