@@ -10,8 +10,9 @@ export default function ProductOffers() {
         <div className="p-10 text-left text-white">
           <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">MText++</h3>
           <p className="text-white mb-2">
-            Increment numbers in MText with a single command. Quickly update lot
-            or sheet numbers in AutoCAD with adjustable step values.
+            Instantly renumber lots or sheets—no more copy‑paste marathons.
+            MText++ speeds through your MText and applies increments exactly the
+            way you want.
           </p>
           <a href="/products/mtextplusplus" className="text-white hover:underline">
             Learn more →

@@ -11,9 +11,10 @@ export default function MTextPlusPlus() {
         <div className="text-off-white bg-industrial-black/90 rounded-3xl shadow-lg p-10 text-center backdrop-blur-sm max-w-4xl">
           <h1 className="text-4xl font-bold mb-4">MText++</h1>
           <p className="max-w-xl text-lg text-neutral-grey text-center">
-            A simple AutoLISP tool for incrementing numbers inside MText. Select
-            text like "Lot 1" and watch it update to "Lot 2", "Lot 3", and so on
-            &mdash; with customizable step values.
+            Wave goodbye to tedious renumbering. MText++ races through your
+            drawing and bumps every "Lot" or "Sheet" label at lightning speed.
+            Set any increment, press run, and watch your text keep pace with
+            your design without missing a beat.
           </p>
         </div>
       </div>
