@@ -19,7 +19,7 @@ import { Button } from "@/components/ui/button";
 
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import AbstractBackground from "@/app/abstract-background";
+import AbstractBackground from "@/components/abstract-background";
 
 // 1. Define schema
 const contactSchema = z.object({

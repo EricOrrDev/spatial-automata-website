@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -11,6 +12,12 @@ const geistSans = Geist({
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+});
+
+const americanGrotesk = localFont({
+  src: "../fonts/AMERICAN-GROTESK-BOLD.OTF",
+  variable: "--font-american-grotesk",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -45,9 +52,7 @@ export default function RootLayout({
         />
         <link rel="icon" type="image/x-icon" href="/favicon-white.ico" />
       </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <body className={`${geistSans.variable} ${geistMono.variable} ${americanGrotesk.variable} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
