@@ -13,6 +13,14 @@ export default function Products() {
           <ul className="space-y-4 text-xl">
             <li>
               <a
+                href="/products/mtextplusplus"
+                className="text-blueprint-blue hover:underline"
+              >
+                MText++
+              </a>
+            </li>
+            <li>
+              <a
                 href="/products/block-captain"
                 className="text-blueprint-blue hover:underline"
               >
