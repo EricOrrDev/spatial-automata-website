@@ -16,7 +16,7 @@ import { cn } from "@/lib/utils";
 
 export default function Navbar() {
   return (
-    <nav className="px-6 py-6 flex items-center justify-between bg-industrial-black/90 rounded-xl shadow-lg text-center backdrop-blur-sm">
+    <nav className="relative z-50 px-6 py-6 flex items-center justify-between bg-industrial-black/90 rounded-xl shadow-lg text-center backdrop-blur-sm">
       {/* Left side with nav menu */}
       <NavigationMenu>
         <NavigationMenuList className="flex items-center space-x-6">
