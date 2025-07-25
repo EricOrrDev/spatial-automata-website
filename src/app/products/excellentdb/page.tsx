@@ -1,6 +1,6 @@
 import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
-import AbstractBackground from "@/app/abstract-background";
+import AbstractBackground from "@/components/abstract-background";
 
 export default function ExcellentDB() {
   return (
