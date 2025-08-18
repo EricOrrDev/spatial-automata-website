@@ -12,9 +12,9 @@ export default function MTextPlusPlus() {
           <h1 className="text-4xl font-bold mb-4">MText++</h1>
           <p className="max-w-xl text-lg text-neutral-grey text-center">
             Wave goodbye to tedious renumbering. MText++ races through your
-            drawing and bumps every "Lot" or "Sheet" label at lightning speed.
-            Set any increment, press run, and watch your text keep pace with
-            your design without missing a beat.
+            drawing and bumps every &quot;Lot&quot; or &quot;Sheet&quot; label
+            at lightning speed. Set any increment, press run, and watch your
+            text keep pace with your design without missing a beat.
           </p>
         </div>
       </div>
