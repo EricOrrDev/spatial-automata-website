@@ -8,16 +8,36 @@ export default function ProductOffers() {
       </h2>
       <div className="grid md:grid-cols-2 gap-8">
         <div className="p-10 text-left text-white">
-          <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">MText++</h3>
+          <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">
+            SpeedyLUTs
+          </h3>
           <p className="text-white mb-2">
-            Instantly renumber lots or sheets—no more copy‑paste marathons.
-            MText++ speeds through your MText and applies increments exactly the
-            way you want.
+            Disposable precomputed lookup tables for .NET. Load massive datasets
+            like primes, squares, and square roots in milliseconds, copy the
+            ranges you need, then drop them from memory instantly.
           </p>
-          <a href="/products/mtextplusplus" className="text-white hover:underline">
+          <a href="/products/speedyluts" className="text-white hover:underline">
             Learn more →
           </a>
         </div>
+
+        <div className="p-10 text-left text-white">
+          <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">
+            MText++
+          </h3>
+          <p className="text-white mb-2">
+            Instantly renumber lots or sheets—no more copy-paste marathons.
+            MText++ speeds through your MText and applies increments exactly the
+            way you want.
+          </p>
+          <a
+            href="/products/mtextplusplus"
+            className="text-white hover:underline"
+          >
+            Learn more →
+          </a>
+        </div>
+
         <div className="p-10 text-left text-white">
           <h3 className="text-2xl font-bold mb-2 text-blueprint-blue">
             Block Captain
