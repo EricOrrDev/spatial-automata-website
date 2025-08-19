@@ -27,6 +27,7 @@ export default function Navbar() {
             <NavigationMenuContent className="bg-industrial-black text-black rounded-md shadow-md p-4 min-w-[200px]">
               <ul className="flex flex-col gap-2">
                 {[
+                  { name: "Speedy LUTs", href: "/products/speedy-luts" },
                   { name: "MText++", href: "/products/mtextplusplus" },
                   { name: "Block Captain", href: "/products/block-captain" },
                   { name: "Redline Relay", href: "/products/redline-relay" },
