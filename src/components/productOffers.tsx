@@ -83,6 +83,16 @@ export default function ProductOffers() {
           </a>
         </div>
         <div className="p-10 text-left text-white">
+          <h3 className="text-2xl font-bold mb-2 text-white">CHASM.NET</h3>
+          <p className="text-white mb-2">
+            Build composable, declarative, high-level state machines for .NET
+            applications. Go from diagram to code in minutes, not hours.
+          </p>
+          <a href="/products/CHASM.NET" className="text-white hover:underline">
+            Learn more →
+          </a>
+        </div>
+        <div className="p-10 text-left text-white">
           <h3 className="text-2xl font-bold mb-2 text-white">CodeCheck</h3>
           <p className="text-white mb-2">
             Automated building code compliance for Revit. Our state machine

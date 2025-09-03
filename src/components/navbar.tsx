@@ -32,6 +32,7 @@ export default function Navbar() {
                   { name: "Block Captain", href: "/products/block-captain" },
                   { name: "Redline Relay", href: "/products/redline-relay" },
                   { name: "ExcellentDB", href: "/products/excellentdb" },
+                  { name: "CHASM.NET", href: "/products/CHASM.NET" },
                   { name: "CodeCheck", href: "/products/codecheck" },
                 ].map((item) => (
                   <li key={item.name}>
