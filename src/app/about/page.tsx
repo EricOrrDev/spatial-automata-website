@@ -20,7 +20,7 @@ export default function About() {
             <br />
             <br />
             We develop modular software products that interoperate cleanly with
-            existing platforms—whether it’s managing CAD blocks at scale,
+            existing platforms; whether it's managing CAD blocks at scale,
             tracking active design time for accurate billing, or creating
             agent-to-agent communication layers for real-time collaboration.
             Each tool reflects a belief in deterministic systems, predictable
@@ -28,7 +28,7 @@ export default function About() {
             complexity.
             <br />
             <br />
-            At Spatial Automata, we don’t just build tools—we build logical
+            At Spatial Automata, we don’t just build tools, we build logical
             machines, machined logically.
           </p>
         </div>
