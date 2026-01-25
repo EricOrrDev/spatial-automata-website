@@ -61,3 +61,8 @@ To get the project up and running for development, you'll need to have Node.js a
 *   **Tailwind CSS:** A utility-first CSS framework for rapid UI development.
 *   **shadcn/ui:** A collection of reusable UI components.
 *   **Vercel:** The project is set up for easy deployment on the Vercel platform.
+
+## Development Conventions
+
+*   When writing body text, use `&quot;` instead of quotes.
+*   Before every commit, run `npm run build` to ensure the project can build correctly.
