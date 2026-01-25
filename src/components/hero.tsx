@@ -10,9 +10,10 @@ export default function HeroSection() {
 			</h1>
 			<p className="text-xl text-white mb-8 max-w-2xl mx-auto">
 				Spatial Automata is building the safety layer for AI-driven industrial
-				systems. Our flagship product, CHASM.NET, provides a deterministic gap
-				between non-deterministic AI and high-value physical hardware, ensuring
-				that AI agents operate within mathematically verifiable guardrails.
+				systems. Our flagship product, Axiom Factory, provides a deterministic
+				gap between non-deterministic AI and high-value physical hardware,
+				ensuring that AI agents operate within mathematically verifiable
+				guardrails.
 			</p>
 			<div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
 				<Input
