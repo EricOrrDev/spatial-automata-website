@@ -5,7 +5,11 @@ module.exports = {
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
-  	extend: {
+    extend: {
+      fontFamily: {
+        sans: ['Space Mono', 'monospace'],
+        heading: ['Unica One', 'sans-serif'],
+      },
   		borderRadius: {
   			lg: 'var(--radius)',
   			md: 'calc(var(--radius) - 2px)',
