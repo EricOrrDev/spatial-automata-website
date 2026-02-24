@@ -7,8 +7,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['Space Mono', 'monospace'],
-        heading: ['Unica One', 'sans-serif'],
+        sans: ['var(--font-roboto)', 'sans-serif'],
+        heading: ['var(--font-roboto)', 'sans-serif'],
+        mono: ['var(--font-roboto-mono)', 'monospace'],
       },
   		borderRadius: {
   			lg: 'var(--radius)',
