@@ -17,7 +17,7 @@ const robotoMono = Roboto_Mono({
 
 export const metadata: Metadata = {
   title: "Spatial Automata",
-  description: "The future of AEC automation",
+  description: "Personal blog about software engineering, computational geometry, and AEC automation.",
 };
 
 export default function RootLayout({

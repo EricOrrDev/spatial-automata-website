@@ -2,7 +2,7 @@ import AbstractBackground from "@/components/abstract-background";
 import Navbar from "../components/navbar";
 import Footer from "../components/footer";
 import HeroSection from "../components/hero";
-import ProductOffers from "../components/productOffers";
+import RecentPosts from "../components/recent-posts";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Navbar />
       <main className="px-6 py-20 max-w-4xl mx-auto">
         <HeroSection />
-        <ProductOffers />
+        <RecentPosts />
       </main>
       <Footer />
     </div>

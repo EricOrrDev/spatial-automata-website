@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-This is the official website for Spatial Automata, a company focused on AEC (Architecture, Engineering, and Construction) automation. The website is built using the Next.js framework, React, and TypeScript, providing a modern, fast, and responsive user experience. It serves as a marketing platform to showcase the company's products and provide information about the company.
+This is the official personal blog for Spatial Automata. It's focused on software engineering, computational geometry, AEC (Architecture, Engineering, and Construction) automation, and AI safety. The website is built using the Next.js framework, React, and TypeScript.
 
 The project is structured as a standard Next.js application with a clear separation of concerns. It utilizes Tailwind CSS for styling, with a custom theme defined in `tailwind.config.js`. The UI is built with a combination of custom React components and components from the shadcn/ui library, which is based on Radix UI and Lucide React icons.
 
@@ -44,14 +44,18 @@ To get the project up and running for development, you'll need to have Node.js a
 ## Project Structure
 
 *   `src/app/`: Contains the core application logic, including page routes and layouts.
-    *   `src/app/page.tsx`: The main entry point for the homepage.
+    *   `src/app/page.tsx`: The main entry point for the homepage (Recent Posts).
     *   `src/app/layout.tsx`: The root layout for the application.
-    *   `src/app/products/`: Contains the pages for each of the company's products.
-*   `src/components/`: Contains reusable React components used throughout the application, such as the navbar, footer, and UI elements.
-*   `public/`: Contains static assets like images, fonts, and favicons.
-*   `tailwind.config.js`: The configuration file for Tailwind CSS, where the custom theme is defined.
-*   `next.config.ts`: The configuration file for Next.js.
-*   `tsconfig.json`: The configuration file for TypeScript.
+    *   `src/app/blog/`: Contains the blog listing and single post pages.
+    *   `src/app/projects/`: (Placeholder) for personal projects.
+    *   `src/app/about/`: Personal bio and information.
+*   `src/components/`: Contains reusable React components.
+*   `src/content/blog/`: Markdown files for blog posts.
+*   `src/lib/`: Utility functions, including the blog post loader.
+*   `public/`: Static assets like images and fonts.
+*   `tailwind.config.js`: Configuration for Tailwind CSS.
+*   `next.config.ts`: Configuration for Next.js.
+*   `tsconfig.json`: Configuration for TypeScript.
 
 ## Key Technologies
 
