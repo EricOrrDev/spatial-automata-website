@@ -1,5 +1,4 @@
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import AbstractBackground from "@/components/abstract-background";
 
 export default function About() {
@@ -7,8 +6,8 @@ export default function About() {
 		<div>
 			<Navbar />
 			<AbstractBackground />
-			<div className="min-h-screen flex flex-col items-center justify-center bg-industrial-black/90 text-off-white">
-				<div className="bg-industrial-black/50 rounded-4xl shadow-lg p-10 text-center backdrop-blur-sm">
+			<div className="min-h-screen flex flex-col items-center justify-center bg-industrial-black/95 text-off-white">
+				<div className="bg-industrial-black/80 rounded-4xl shadow-lg p-10 text-center backdrop-blur-sm">
 					<h1 className="text-4xl font-bold mb-4">About Spatial Automata</h1>
 					<p className="max-w-2xl text-lg text-neutral-grey text-left">
 						I&apos;m a software engineer and researcher focused on the intersection of 
@@ -33,7 +32,6 @@ export default function About() {
 					</p>
 				</div>
 			</div>
-			<Footer />
 		</div>
 	);
 }

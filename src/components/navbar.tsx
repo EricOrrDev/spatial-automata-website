@@ -13,21 +13,10 @@ import {
 
 export default function Navbar() {
   return (
-    <nav className="relative z-50 px-6 py-6 flex items-center justify-between bg-industrial-black/90 rounded-xl shadow-lg text-center backdrop-blur-sm">
+    <nav className="relative z-50 px-6 py-6 flex items-center justify-between bg-industrial-black/95 rounded-xl shadow-lg text-center backdrop-blur-sm">
       {/* Left side with nav menu */}
       <NavigationMenu>
         <NavigationMenuList className="flex items-center space-x-6">
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Link
-                href="/projects"
-                className="hover:text-blueprint-blue text-white transition-colors"
-              >
-                Projects
-              </Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
-
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <Link

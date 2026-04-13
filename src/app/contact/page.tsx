@@ -18,7 +18,6 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import AbstractBackground from "@/components/abstract-background";
 
 // 1. Define schema
@@ -98,7 +97,6 @@ export default function AboutPage() {
           </form>
         </Form>
       </div>
-      <Footer />
     </>
   );
 }

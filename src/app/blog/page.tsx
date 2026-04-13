@@ -1,7 +1,6 @@
 import Link from "next/link";
 import AbstractBackground from "@/components/abstract-background";
 import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
 import { getSortedPostsData } from "@/lib/blog";
 
 export default async function BlogPage() {
@@ -16,7 +15,7 @@ export default async function BlogPage() {
         <div className="grid gap-8">
           {allPostsData.map(({ slug, date, title, excerpt }) => (
             <Link key={slug} href={`/blog/${slug}`} className="block group">
-              <div className="bg-industrial-black/90 rounded-2xl p-8 border border-slate-grey/30 hover:border-engineering-red transition-all shadow-lg backdrop-blur-sm group-hover:transform group-hover:scale-[1.01]">
+              <div className="bg-industrial-black/95 rounded-2xl p-8 border border-slate-grey/30 hover:border-engineering-red transition-all shadow-lg backdrop-blur-sm group-hover:transform group-hover:scale-[1.01]">
                 <p className="text-sm text-neutral-grey mb-2">{date}</p>
                 <h2 className="text-2xl font-bold mb-3 group-hover:text-engineering-red transition-colors text-white">{title}</h2>
                 <p className="text-neutral-grey leading-relaxed">{excerpt}</p>
@@ -28,7 +27,6 @@ export default async function BlogPage() {
           ))}
         </div>
       </main>
-      <Footer />
     </div>
   );
 }

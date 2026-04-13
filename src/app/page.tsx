@@ -1,6 +1,5 @@
 import AbstractBackground from "@/components/abstract-background";
 import Navbar from "../components/navbar";
-import Footer from "../components/footer";
 import HeroSection from "../components/hero";
 import RecentPosts from "../components/recent-posts";
 
@@ -13,7 +12,6 @@ export default function Home() {
         <HeroSection />
         <RecentPosts />
       </main>
-      <Footer />
     </div>
   );
 }

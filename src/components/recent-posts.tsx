@@ -17,7 +17,7 @@ export default async function RecentPosts() {
       <div className="grid gap-6">
         {recentPosts.map(({ slug, date, title, excerpt }) => (
           <Link key={slug} href={`/blog/${slug}`} className="block group">
-            <Card className="bg-industrial-black/90 rounded-2xl p-8 border border-slate-grey/30 hover:border-engineering-red transition-all shadow-lg backdrop-blur-sm group-hover:transform group-hover:scale-[1.01] text-white">
+            <Card className="bg-industrial-black/95 rounded-2xl p-8 border border-slate-grey/30 hover:border-engineering-red transition-all shadow-lg backdrop-blur-sm group-hover:transform group-hover:scale-[1.01] text-white">
               <p className="text-sm text-neutral-grey mb-2">{date}</p>
               <h3 className="text-2xl font-bold mb-3 group-hover:text-engineering-red transition-colors text-white">
                 {title}
