@@ -29,6 +29,32 @@ type ConstructionLine = {
 };
 
 const AbstractBackground: React.FC = () => {
+  const [shouldRender, setShouldRender] = React.useState(false);
+
+  React.useEffect(() => {
+    // Check if requestIdleCallback is available (Safari doesn't support it natively yet)
+    // We use a longer timeout (1000ms) to ensure we really wait until after the page is usable
+    if (typeof window !== "undefined") {
+      const win = window as typeof window & {
+        requestIdleCallback: (cb: () => void) => number;
+        cancelIdleCallback: (id: number) => void;
+      };
+
+      const requestIdle =
+        win.requestIdleCallback ||
+        ((cb: () => void) => setTimeout(cb, 1000));
+      const idleId = requestIdle(() => {
+        setShouldRender(true);
+      });
+
+      return () => {
+        const cancelIdle =
+          win.cancelIdleCallback || clearTimeout;
+        cancelIdle(idleId as number);
+      };
+    }
+  }, []);
+
   const amountOfObjectsLowerBound = 20;
   const amountOfObjectsUpperBound = 35;
   const amountOfObjects = React.useRef<number>(
@@ -130,7 +156,9 @@ const AbstractBackground: React.FC = () => {
 
   return (
     <div className="fixed inset-0 -z-10 pointer-events-none opacity-40">
-      <Sketch setup={setup} draw={draw} windowResized={windowResized} />
+      {shouldRender && (
+        <Sketch setup={setup} draw={draw} windowResized={windowResized} />
+      )}
     </div>
   );
 };
