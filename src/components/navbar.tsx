@@ -38,6 +38,17 @@ export default function Navbar() {
               </Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild>
+              <Link
+                href="/projects"
+                className="hover:text-blueprint-blue text-white transition-colors"
+              >
+                Projects
+              </Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
         </NavigationMenuList>
 
         {/* ShadCN Required */}

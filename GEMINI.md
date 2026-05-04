@@ -70,3 +70,4 @@ To get the project up and running for development, you'll need to have Node.js a
 
 *   When writing body text, use `&quot;` instead of quotes.
 *   Before every commit, run `npm run build` to ensure the project can build correctly.
+*   **Accessibility:** All new builds must pass a basic suite of WCAG tests, specifically focusing on color contrast (aiming for AAA where possible, minimum AA) to ensure high readability.
