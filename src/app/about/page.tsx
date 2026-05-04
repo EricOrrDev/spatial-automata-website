@@ -77,39 +77,86 @@ export default function About() {
 							<CardContent className="text-white">
 								<ul className="grid grid-cols-2 gap-2">
 									<li>C#</li>
-									<li>C++</li>
 									<li>C</li>
+									<li>C++</li>
 									<li>HTML / CSS</li>
-									<li>JavaScript</li>
+									<li>TypeScript</li>
 									<li>Python</li>
-									<li>SQL</li>
+									<li>Ruby</li>
 								</ul>
 							</CardContent>
 						</Card>
 
 						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
 							<CardHeader>
-								<CardTitle className="text-white">Technologies</CardTitle>
+								<CardTitle className="text-white">Databases & ORMs</CardTitle>
 							</CardHeader>
 							<CardContent className="text-white">
 								<ul className="grid grid-cols-2 gap-2">
-									<li>Node.js</li>
-									<li>Express.js</li>
-									<li>.NET</li>
-									<li>REST APIs</li>
-									<li>MySQL</li>
 									<li>PostgreSQL</li>
+									<li>MySQL</li>
+									<li>SQLite</li>
 									<li>MongoDB</li>
+									<li>Mongoose</li>
+									<li>Entity Framework</li>
 								</ul>
 							</CardContent>
 						</Card>
 
-						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm md:col-span-2">
+						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+							<CardHeader>
+								<CardTitle className="text-white">Web</CardTitle>
+							</CardHeader>
+							<CardContent className="text-white">
+								<ul className="grid grid-cols-2 gap-2">
+									<li>Node.js</li>
+									<li>Express</li>
+									<li>Next.js</li>
+									<li>React</li>
+									<li>shadcn/ui</li>
+									<li>Tailwind CSS</li>
+									<li>WCAG</li>
+									<li>.NET</li>
+									<li>REST APIs</li>
+								</ul>
+							</CardContent>
+						</Card>
+
+						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+							<CardHeader>
+								<CardTitle className="text-white">Tools & Environments</CardTitle>
+							</CardHeader>
+							<CardContent className="text-white">
+								<ul className="grid grid-cols-2 gap-2">
+									<li>Linux</li>
+									<li>Docker</li>
+									<li>Windows</li>
+									<li>Git / GitHub</li>
+									<li>GitHub Actions</li>
+									<li>Azure</li>
+								</ul>
+							</CardContent>
+						</Card>
+
+						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+							<CardHeader>
+								<CardTitle className="text-white">Parallel</CardTitle>
+							</CardHeader>
+							<CardContent className="text-white">
+								<ul className="grid grid-cols-2 gap-2">
+									<li>OpenMP</li>
+									<li>CUDA C++</li>
+									<li>ILGPU</li>
+								</ul>
+							</CardContent>
+						</Card>
+
+						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
 							<CardHeader>
 								<CardTitle className="text-white">Drafting & Design</CardTitle>
 							</CardHeader>
 							<CardContent className="text-white">
-								<ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
+								<ul className="grid grid-cols-2 gap-2">
 									<li>AutoCAD</li>
 									<li>Inventor</li>
 									<li>Microstation</li>
