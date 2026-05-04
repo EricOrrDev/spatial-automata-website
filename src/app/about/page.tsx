@@ -80,7 +80,7 @@ export default function About() {
 									<li>C</li>
 									<li>C++</li>
 									<li>HTML / CSS</li>
-									<li>TypeScript</li>
+									<li>TypeScript / JavaScript</li>
 									<li>Python</li>
 									<li>Ruby</li>
 								</ul>
@@ -109,14 +109,12 @@ export default function About() {
 							</CardHeader>
 							<CardContent className="text-white">
 								<ul className="grid grid-cols-2 gap-2">
+									<li>.NET</li>
 									<li>Node.js</li>
 									<li>Express</li>
 									<li>Next.js</li>
 									<li>React</li>
-									<li>shadcn/ui</li>
-									<li>Tailwind CSS</li>
-									<li>WCAG</li>
-									<li>.NET</li>
+									<li>WCAG 2.1</li>
 									<li>REST APIs</li>
 								</ul>
 							</CardContent>
@@ -124,7 +122,9 @@ export default function About() {
 
 						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
 							<CardHeader>
-								<CardTitle className="text-white">Tools & Environments</CardTitle>
+								<CardTitle className="text-white">
+									Tools & Environments
+								</CardTitle>
 							</CardHeader>
 							<CardContent className="text-white">
 								<ul className="grid grid-cols-2 gap-2">
@@ -235,6 +235,24 @@ export default function About() {
 								"Operated a point-of-sales system to be top 20 in district for speed and productivity.",
 								"Defused hostile customer interactions, including high-stress situations involving threats.",
 								"Led and delegated resolutions of diverse and unexpected operational challenges.",
+							]}
+						/>
+					</div>
+				</section>
+
+				{/* Leadership & Activities Section */}
+				<section className="space-y-6">
+					<h2 className="text-3xl font-bold text-white px-2">Leadership & Activities</h2>
+					<div className="space-y-4">
+						<ExperienceItem
+							title="Secretary & Communications Officer"
+							company="Hacker Refactor (OSU-Cascades ACM-W)"
+							location="Bend, Oregon"
+							period="September 2025 - Present"
+							points={[
+								"Coordinated outreach initiatives to local schools, exposing K-12 students to computer science and fostering early interest in STEM careers.",
+								"Planned and executed events with external organizations and community members to build a broader network of individuals engaged in computer science.",
+								"Mentored a AP CS high school student, providing guidance on program structure, design patterns, and CS fundamentals.",
 							]}
 						/>
 					</div>
