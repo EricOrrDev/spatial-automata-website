@@ -10,6 +10,16 @@ const projects = [
     link: "https://github.com/EricOrrDev/spatial-automata-website"
   },
   {
+    title: "LINQCod",
+    subtitle: "A Blazor WebAssembly app using Roslyn to dynamically evaluate and score C# LINQ queries.",
+    link: "https://github.com/EricOrrDev/LINQCod"
+  },
+  {
+    title: "TryCatch Rain",
+    subtitle: "A mobile weather application created for a mobile development class.",
+    link: "https://github.com/EricOrrDev/cs492-weather-app"
+  },
+  {
     title: "MText++",
     subtitle: "A simple tool for finding and incrementing numbers in MText strings in AutoCAD.",
     link: "https://github.com/EricOrrDev/Mtext_plusplus"
