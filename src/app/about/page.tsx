@@ -10,7 +10,7 @@ export default function About() {
 
 			<main className="max-w-4xl mx-auto px-6 py-20 relative z-10 space-y-12">
 				{/* Bio Section */}
-				<section className="bg-industrial-black/80 rounded-3xl md:rounded-4xl shadow-lg p-8 md:p-12 backdrop-blur-sm border border-slate-grey/30">
+				<section className="bg-industrial-black/80 rounded-3xl md:rounded-4xl shadow-lg p-8 md:p-12 backdrop-blur-md border border-slate-grey/30">
 					<h1 className="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">
 						About Me
 					</h1>
@@ -70,7 +70,7 @@ export default function About() {
 				<section className="space-y-6">
 					<h2 className="text-3xl font-bold text-white px-2">Skills</h2>
 					<div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+						<Card className="bg-industrial-black/80 border-slate-grey/30 backdrop-blur-md">
 							<CardHeader>
 								<CardTitle className="text-white">Languages</CardTitle>
 							</CardHeader>
@@ -87,7 +87,7 @@ export default function About() {
 							</CardContent>
 						</Card>
 
-						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+						<Card className="bg-industrial-black/80 border-slate-grey/30 backdrop-blur-md">
 							<CardHeader>
 								<CardTitle className="text-white">Databases & ORMs</CardTitle>
 							</CardHeader>
@@ -103,7 +103,7 @@ export default function About() {
 							</CardContent>
 						</Card>
 
-						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+						<Card className="bg-industrial-black/80 border-slate-grey/30 backdrop-blur-md">
 							<CardHeader>
 								<CardTitle className="text-white">Web</CardTitle>
 							</CardHeader>
@@ -120,7 +120,7 @@ export default function About() {
 							</CardContent>
 						</Card>
 
-						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+						<Card className="bg-industrial-black/80 border-slate-grey/30 backdrop-blur-md">
 							<CardHeader>
 								<CardTitle className="text-white">
 									Tools & Environments
@@ -138,7 +138,7 @@ export default function About() {
 							</CardContent>
 						</Card>
 
-						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+						<Card className="bg-industrial-black/80 border-slate-grey/30 backdrop-blur-md">
 							<CardHeader>
 								<CardTitle className="text-white">Parallel</CardTitle>
 							</CardHeader>
@@ -151,7 +151,7 @@ export default function About() {
 							</CardContent>
 						</Card>
 
-						<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+						<Card className="bg-industrial-black/80 border-slate-grey/30 backdrop-blur-md">
 							<CardHeader>
 								<CardTitle className="text-white">Drafting & Design</CardTitle>
 							</CardHeader>
@@ -171,7 +171,7 @@ export default function About() {
 				{/* Education Section */}
 				<section className="space-y-6">
 					<h2 className="text-3xl font-bold text-white px-2">Education</h2>
-					<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+					<Card className="bg-industrial-black/80 border-slate-grey/30 backdrop-blur-md">
 						<CardHeader>
 							<CardTitle className="text-white">
 								Bachelors of Science in Computer Science
@@ -276,7 +276,7 @@ function ExperienceItem({
 	points: string[];
 }) {
 	return (
-		<Card className="bg-industrial-black/60 border-slate-grey/30 backdrop-blur-sm">
+		<Card className="bg-industrial-black/80 border-slate-grey/30 backdrop-blur-md">
 			<CardHeader>
 				<div className="flex flex-col md:flex-row md:justify-between md:items-start gap-2">
 					<div>

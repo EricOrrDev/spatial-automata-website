@@ -46,7 +46,7 @@ export default function ProjectsPage() {
         <h1 className="text-4xl md:text-5xl font-bold mb-10 text-white leading-tight">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            <Card key={index} className="bg-industrial-black/95 rounded-2xl border border-slate-grey/30 hover:border-white/50 transition-all shadow-lg backdrop-blur-sm group flex flex-col justify-between h-full">
+            <Card key={index} className="bg-industrial-black/98 rounded-2xl border border-slate-grey/30 hover:border-white/50 transition-all shadow-lg backdrop-blur-md group flex flex-col justify-between h-full">
               <CardHeader>
                 <CardTitle className="text-2xl font-bold text-white group-hover:text-white transition-colors">
                   {project.title}

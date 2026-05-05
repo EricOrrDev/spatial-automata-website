@@ -22,7 +22,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
         >
           ← Back to Blog
         </Link>
-        <div className="bg-industrial-black/80 rounded-3xl md:rounded-4xl shadow-lg p-8 md:p-12 backdrop-blur-sm">
+        <div className="bg-industrial-black/98 rounded-3xl md:rounded-4xl shadow-lg p-8 md:p-12 border border-slate-grey/30 backdrop-blur-md">
           <article className="prose prose-invert prose-red max-w-none">
             <header className="mb-10">
               <h1 className="text-4xl md:text-5xl font-bold mb-4 text-white leading-tight">
