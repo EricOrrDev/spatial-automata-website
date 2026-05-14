@@ -12,7 +12,8 @@ const projects = [
   {
     title: "LINQCod",
     subtitle: "A Blazor WebAssembly app using Roslyn to dynamically evaluate and score C# LINQ queries.",
-    link: "https://github.com/EricOrrDev/LINQCod"
+    link: "https://github.com/EricOrrDev/LINQCod",
+    demoLink: "https://linqcod.com"
   },
   {
     title: "TryCatch Rain",
@@ -32,7 +33,8 @@ const projects = [
   {
     title: "Portfolio Website",
     subtitle: "The original personal portfolio and source of this site's content.",
-    link: "https://github.com/EricOrrDev/EricOrrDev.io"
+    link: "https://github.com/EricOrrDev/EricOrrDev.io",
+    demoLink: "https://ericorrdev.github.io/"
   }
 ];
 
@@ -55,14 +57,23 @@ export default function ProjectsPage() {
                   {project.subtitle}
                 </p>
               </CardHeader>
-              <CardFooter className="mt-auto pt-6">
+              <CardFooter className="mt-auto pt-6 flex flex-wrap gap-4">
                 <Link 
                   href={project.link} 
                   target="_blank" 
-                  className="flex items-center text-white font-semibold hover:underline border border-white/20 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
+                  className="flex items-center text-white font-semibold hover:underline border border-white/20 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors whitespace-nowrap"
                 >
-                  View on GitHub <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  GitHub <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </Link>
+                {project.demoLink && (
+                  <Link 
+                    href={project.demoLink} 
+                    target="_blank" 
+                    className="flex items-center text-white font-semibold hover:underline border border-white/20 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors whitespace-nowrap"
+                  >
+                    View Live <span className="ml-2 group-hover:translate-x-1 transition-transform">↗</span>
+                  </Link>
+                )}
               </CardFooter>
             </Card>
           ))}
