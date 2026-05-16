@@ -10,7 +10,7 @@ export default function HeroSection() {
 			</h1>
 			<p className="text-xl text-white mb-8 max-w-2xl mx-auto">
 				I&apos;m a CS student, and this is my blog about software engineering,
-				computational geometry, and AEC automation.
+				computational geometry, and AEC automation
 			</p>
 			<div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
 				<Button name="ReadBlogButton" className="px-6 py-3" asChild>

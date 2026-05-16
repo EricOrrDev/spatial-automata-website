@@ -8,7 +8,7 @@ export default function Home() {
     <div className="min-h-screen bg-industrial-black text-off-white relative overflow-hidden">
       <AbstractBackground />
       <Navbar />
-      <main className="px-6 py-20 max-w-4xl mx-auto">
+      <main id="main-content" className="px-6 py-20 max-w-4xl mx-auto">
         <HeroSection />
         <RecentPosts />
       </main>

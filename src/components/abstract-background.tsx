@@ -155,7 +155,7 @@ const AbstractBackground: React.FC = () => {
   };
 
   return (
-    <div className="fixed inset-0 -z-10 pointer-events-none opacity-40">
+    <div className="fixed inset-0 -z-10 pointer-events-none opacity-40" aria-hidden="true">
       {shouldRender && (
         <Sketch setup={setup} draw={draw} windowResized={windowResized} />
       )}

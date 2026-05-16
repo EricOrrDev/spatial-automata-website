@@ -15,7 +15,7 @@ export default async function BlogPost({ params }: BlogPostProps) {
     <div className="min-h-screen bg-industrial-black/95 text-off-white relative overflow-hidden">
       <AbstractBackground />
       <Navbar />
-      <main className="px-6 py-20 max-w-4xl mx-auto relative z-10">
+      <main id="main-content" className="px-6 py-20 max-w-4xl mx-auto relative z-10">
         <Link 
           href="/blog" 
           className="text-engineering-red hover:underline mb-8 inline-block"

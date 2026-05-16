@@ -48,7 +48,8 @@ export default function AboutPage() {
     <>
       <Navbar />
       <AbstractBackground />
-      <div className="max-w-xl mx-auto px-4 py-10">
+      <main id="main-content" className="max-w-xl mx-auto px-4 py-10">
+        <h1 className="text-4xl font-bold mb-8 text-white">Contact Me</h1>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
             <FormField
@@ -96,7 +97,7 @@ export default function AboutPage() {
             <Button type="submit">Send Message</Button>
           </form>
         </Form>
-      </div>
+      </main>
     </>
   );
 }

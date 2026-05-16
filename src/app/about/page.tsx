@@ -8,7 +8,7 @@ export default function About() {
 			<Navbar />
 			<AbstractBackground />
 
-			<main className="max-w-4xl mx-auto px-6 py-20 relative z-10 space-y-12">
+			<main id="main-content" className="max-w-4xl mx-auto px-6 py-20 relative z-10 space-y-12">
 				{/* Bio Section */}
 				<section className="bg-industrial-black/80 rounded-3xl md:rounded-4xl shadow-lg p-8 md:p-12 backdrop-blur-md border border-slate-grey/30">
 					<h1 className="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">

@@ -37,6 +37,7 @@ export default function EmailSignup() {
 			<Input
 				type="email"
 				placeholder="Enter your email"
+				aria-label="Email Address"
 				required
 				value={email}
 				onChange={(e) => setEmail(e.target.value)}
@@ -45,7 +46,7 @@ export default function EmailSignup() {
 			<Button type="submit" disabled={loading}>
 				{loading ? "Joining..." : "Join the Mailing List"}
 			</Button>
-			{message && <p className="text-gray-700">{message}</p>}
+			{message && <p role="status" className="text-gray-700">{message}</p>}
 		</form>
 	);
 }

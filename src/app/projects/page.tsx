@@ -44,7 +44,7 @@ export default function ProjectsPage() {
       <Navbar />
       <AbstractBackground />
 
-      <main className="max-w-4xl mx-auto px-6 py-20 relative z-10">
+      <main id="main-content" className="max-w-4xl mx-auto px-6 py-20 relative z-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-10 text-white leading-tight">Projects</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
@@ -61,6 +61,7 @@ export default function ProjectsPage() {
                 <Link 
                   href={project.link} 
                   target="_blank" 
+                  aria-label={`GitHub repository for ${project.title}`}
                   className="flex items-center text-white font-semibold hover:underline border border-white/20 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors whitespace-nowrap"
                 >
                   GitHub <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
@@ -69,6 +70,7 @@ export default function ProjectsPage() {
                   <Link 
                     href={project.demoLink} 
                     target="_blank" 
+                    aria-label={`Live demo for ${project.title}`}
                     className="flex items-center text-white font-semibold hover:underline border border-white/20 px-4 py-2 rounded-lg bg-white/5 hover:bg-white/10 transition-colors whitespace-nowrap"
                   >
                     View Live <span className="ml-2 group-hover:translate-x-1 transition-transform">↗</span>

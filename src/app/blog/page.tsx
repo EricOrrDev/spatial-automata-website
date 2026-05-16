@@ -10,11 +10,16 @@ export default async function BlogPage() {
     <div className="min-h-screen bg-industrial-black text-off-white relative overflow-hidden">
       <AbstractBackground />
       <Navbar />
-      <main className="px-6 py-20 max-w-4xl mx-auto relative z-10">
+      <main id="main-content" className="px-6 py-20 max-w-4xl mx-auto relative z-10">
         <h1 className="text-4xl md:text-5xl font-bold mb-10 text-white">Insights & Thoughts</h1>
         <div className="grid gap-8">
           {allPostsData.map(({ slug, date, title, excerpt }) => (
-            <Link key={slug} href={`/blog/${slug}`} className="block group">
+            <Link 
+              key={slug} 
+              href={`/blog/${slug}`} 
+              className="block group"
+              aria-label={`Read more about ${title}`}
+            >
               <div className="bg-industrial-black/98 rounded-2xl p-8 border border-slate-grey/30 hover:border-engineering-red transition-all shadow-lg backdrop-blur-md group-hover:transform group-hover:scale-[1.01]">
                 <p className="text-sm text-neutral-grey mb-2">{date}</p>
                 <h2 className="text-2xl font-bold mb-3 group-hover:text-engineering-red transition-colors text-white">{title}</h2>
