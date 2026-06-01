@@ -241,8 +241,8 @@ export default function About() {
 				</section>
 
 				{/* Leadership & Activities Section */}
-				<section className="space-y-6">
-					<h2 className="text-3xl font-bold text-white px-2">Leadership & Activities</h2>
+				<section aria-labelledby="leadership-heading" className="space-y-6">
+					<h2 id="leadership-heading" className="text-3xl font-bold text-white px-2">Leadership & Activities</h2>
 					<div className="space-y-4">
 						<ExperienceItem
 							title="Secretary & Communications Officer"

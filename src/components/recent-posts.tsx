@@ -7,9 +7,9 @@ export default async function RecentPosts() {
 	const recentPosts = allPostsData.slice(0, 3);
 
 	return (
-		<section className="mt-20">
+		<section aria-labelledby="recent-posts-heading" className="mt-20">
 			<div className="flex justify-between items-end mb-10">
-				<h2 className="text-3xl font-bold text-white">Recent Posts</h2>
+				<h2 id="recent-posts-heading" className="text-3xl font-bold text-white">Recent Posts</h2>
 				<Link
 					href="/blog"
 					className="text-engineering-red hover:underline font-semibold"
@@ -19,7 +19,12 @@ export default async function RecentPosts() {
 			</div>
 			<div className="grid gap-6">
 				{recentPosts.map(({ slug, date, title, excerpt }) => (
-					<Link key={slug} href={`/blog/${slug}`} className="block group">
+					<Link
+						key={slug}
+						href={`/blog/${slug}`}
+						className="block group"
+						aria-label={`Read more about ${title}`}
+					>
 						<Card className="bg-industrial-black/98 rounded-2xl p-8 border border-slate-grey/30 hover:border-engineering-red transition-all shadow-lg backdrop-blur-md group-hover:transform group-hover:scale-[1.01] text-white">
 							<p className="text-sm text-neutral-grey mb-2">{date}</p>
 							<h3 className="text-2xl font-bold mb-3 group-hover:text-engineering-red transition-colors text-white">

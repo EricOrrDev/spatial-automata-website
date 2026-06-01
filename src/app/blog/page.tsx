@@ -20,14 +20,14 @@ export default async function BlogPage() {
               className="block group"
               aria-label={`Read more about ${title}`}
             >
-              <div className="bg-industrial-black/98 rounded-2xl p-8 border border-slate-grey/30 hover:border-engineering-red transition-all shadow-lg backdrop-blur-md group-hover:transform group-hover:scale-[1.01]">
+              <article className="bg-industrial-black/98 rounded-2xl p-8 border border-slate-grey/30 hover:border-engineering-red transition-all shadow-lg backdrop-blur-md group-hover:transform group-hover:scale-[1.01]">
                 <p className="text-sm text-neutral-grey mb-2">{date}</p>
                 <h2 className="text-2xl font-bold mb-3 group-hover:text-engineering-red transition-colors text-white">{title}</h2>
                 <p className="text-neutral-grey leading-relaxed">{excerpt}</p>
                 <div className="mt-4 flex items-center text-engineering-red font-semibold">
-                  Read More <span className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
+                  Read More <span aria-hidden="true" className="ml-2 group-hover:translate-x-1 transition-transform">→</span>
                 </div>
-              </div>
+              </article>
             </Link>
           ))}
         </div>

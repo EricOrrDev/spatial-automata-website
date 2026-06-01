@@ -13,11 +13,10 @@ export default function HeroSection() {
 				computational geometry, and AEC automation
 			</p>
 			<div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
-				<Button name="ReadBlogButton" className="px-6 py-3" asChild>
+				<Button className="px-6 py-3" asChild>
 					<Link href="/blog">Read the Blog</Link>
 				</Button>
 				<Button
-					name="LearnMoreButton"
 					variant="outline"
 					className="px-6 py-3"
 					asChild
