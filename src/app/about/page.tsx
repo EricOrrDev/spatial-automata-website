@@ -8,7 +8,10 @@ export default function About() {
 			<Navbar />
 			<AbstractBackground />
 
-			<main id="main-content" className="max-w-4xl mx-auto px-6 py-20 relative z-10 space-y-12">
+			<main
+				id="main-content"
+				className="max-w-4xl mx-auto px-6 py-20 relative z-10 space-y-12"
+			>
 				{/* Bio Section */}
 				<section className="bg-industrial-black/80 rounded-3xl md:rounded-4xl shadow-lg p-8 md:p-12 backdrop-blur-md border border-slate-grey/30">
 					<h1 className="text-4xl md:text-5xl font-bold mb-8 text-white leading-tight">
@@ -242,17 +245,35 @@ export default function About() {
 
 				{/* Leadership & Activities Section */}
 				<section aria-labelledby="leadership-heading" className="space-y-6">
-					<h2 id="leadership-heading" className="text-3xl font-bold text-white px-2">Leadership & Activities</h2>
+					<h2
+						id="leadership-heading"
+						className="text-3xl font-bold text-white px-2"
+					>
+						Leadership & Activities
+					</h2>
 					<div className="space-y-4">
 						<ExperienceItem
 							title="Secretary & Communications Officer"
 							company="Hacker Refactor (OSU-Cascades ACM-W)"
 							location="Bend, Oregon"
-							period="September 2025 - Present"
+							period="September 2025 - June 2026"
 							points={[
 								"Coordinated outreach initiatives to local schools, exposing K-12 students to computer science and fostering early interest in STEM careers.",
 								"Planned and executed events with external organizations and community members to build a broader network of individuals engaged in computer science.",
 								"Mentored a AP CS high school student, providing guidance on program structure, design patterns, and CS fundamentals.",
+							]}
+						/>
+					</div>
+					<div className="space-y-4">
+						<ExperienceItem
+							title="Vice President"
+							company="Hacker Refactor (OSU-Cascades ACM-W)"
+							location="Bend, Oregon"
+							period="June 2026 - June 2027"
+							points={[
+								"Organized Byte Sessions with students and members of the local technology industry.",
+								"Ran several Hackathons to foster collaborative learning and competitive drive.",
+								"Kept the club alive for one more year!",
 							]}
 						/>
 					</div>
